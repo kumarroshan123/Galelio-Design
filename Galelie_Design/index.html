@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saviour</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap')
+        .main{
+            margin:auto;
+        }
+        .box1{
+            background-image: url("https://s3-alpha-sig.figma.com/img/894b/df6e/56b90bbef82ad188765f40d12a46caef?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U0pPaOMWXR-t72pP3ftgjHJXWtponYsJrenQMv37s4za-g12WmsVx462srUk-VxD8hYPdllQsMQNwL-5l8gdFfYKkIJN8BXmdRgw8sC~WGGVDhLa-lNqS8gu5wSL9JuBwqlowKRSop5T2-52ouVY7JKQwn60O4ep5ui~Iwzp9oJ9RqAzvCuuSuyaB9WnIVauKab6Wn6She-aR7YM2yGgsdsxI8ew~dKEJTQOlfr1fXJkbEoxsk7F9CTgzobgvxEoOSL-yNdvL7Z8p83kFFDPgMbY4MeP7q6Sq4jetVcjVMyYai6AARWuygeEWX~wAc5j5S9NKUYyLcR1Jlf0Mw4t5w__");
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 600px;
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 200px;
+        }
+        .mid{
+            display: flex;
+            justify-content: space-between;
+            background-color:black ;
+            width: Fixed (583px)px;
+            height: 52px;
+            top: 40px;
+            left: -103px;
+            padding: 16px 24px 16px 24px;
+            gap: 24px;
+            border-radius: 20px ;
+            opacity: 0px;
+            margin-top: 46px;
+
+        }
+        .mid p{
+            color: white;
+            font-family: "ZCOOL KuaiLe", sans-serif;
+            font-size: 1.2rem;
+        }
+        .mid img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            background-color: white;
+            margin-top: 18px;
+            margin-left: -5px;
+        }
+        .img{
+            display: flex;
+            margin-top: 27px;
+        }
+        .img > img{
+            width: 106px;
+            height: 117px;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+        .img > p{
+            font-family: "ZCOOL KuaiLe", sans-serif;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: white;
+            margin-top: 45px;
+
+        }
+        .navbar > p{
+            left: 0px;
+        }
+        .navbar button{
+            width: 150px;
+            height: 50px;
+            top: 10px;
+            left: 16px;
+            gap: 0px;
+            opacity: 0px;
+            margin-top: 63px;
+            margin-right: 50px;
+            border-radius: 20px;
+            background-color: red;
+            cursor: pointer;
+            color: white;
+        }
+        .where{
+            width: 1262px;
+        }
+        .where >p {
+            font-size: 4rem;
+            text-align: center;
+            color: white;
+        }
+        .box2{
+            width: 100%;
+            height: 600px;
+            
+            display: flex;
+            background-color: rgb(45, 42, 42);
+        }
+        .fbox{
+             display: flex;
+             flex-direction: column;
+             padding: 100px;
+             width: 45%;
+        }
+        .fbox p{
+            font-size: 1.5rem;
+        }
+        .sbox img{
+            height: 650px;
+            width: 850px;
+        }
+        p{
+            color: white;
+            font-family:"ZCOOL KuaiLe", sans-serif ;
+        }
+        .intro p{
+            font-size: 2.5rem;
+            color: red;
+        }
+        .doc{
+            display: flex;
+            align-items: center;
+        }
+        .doc button{
+            width: 150px;
+            height: 60px;
+            margin-top: 0px;
+            cursor: pointer;
+            background-image: linear-gradient(red,yellow);
+            border-radius: 15px;
+        }
+        .doc img{
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            margin-left: 6px;
+        }
+        .sbox{
+            width: 50%;
+        }
+        .img2{
+            width: 100%;
+            height: 400px;
+        }
+        .box3{
+           width: 100%;
+           height: 600px;
+           background-image: url(https://s3-alpha-sig.figma.com/img/7fb8/c9c7/2e63edc105c3925cfa651946f437c2fd?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pAGxyyrb1oJ0D8VmYEwIuaaJ7VDqdALNGT4PGHE0nVODxcf57LqgD-n5qAfVJ2OuyUQDu7NZyXXx-0Q5Z0cra055u1FKDKhM3p72i9D2pw3~jEGZX31MPbmdipH~YJC5gIHmswbiLpkV2sgldRN4E7sgdK5kACSJBTzjfOVMzCJINoKFeA1~YBbrJJlAa3aVPi1NxjU1JfdvF1jON1RaCM4A-0wCOXBnOuj75vIwp9BsN6GINmM4on0C2aKUJ1R60BOd7hasaciyTeW0HLP5pYkWZ6c1n2Aaej4oPaeNBbsW6SC5Rhps1huvml3FD3PRYTDw1rnSNdBwpyWSyzu79Q__);
+           
+        }
+        .box3 background-image{
+            opacity: 30%;
+        }
+        .pic img{
+            width: 300px;
+            height:350px;
+        }
+        .road{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 40px;
+        }
+        .road p{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgb(253, 2, 2);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            column-gap:20px;
+            position: relative;
+            left: 50px;
+            right: 50px;
+            top:100px
+            
+        }
+        .pic{
+            border: 2px solid black;
+            width: 300px;
+            border-radius: 20px;
+        }
+        .box4{
+            width:100%;
+            height: 700px;
+            display: flex;
+            background-color: rgb(44, 43, 43);
+        }
+        .c1 img{
+            width: 750px;
+            height:650px;
+        }
+        .c2 img{
+            width: 50px;
+            height:50px;
+        }
+        .c2{
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .c2 > p{
+            font-size: 2rem;
+            width: 100%;
+            color: red;
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <div class="navbar">
+                <div class="img"> <img src="https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cpsJ9ujNNmUxLskfs8GDymYzW08fZbPn4MpECcoiM7MzoPM1sX74jPoZaz0Jc-x9e6trrl4SgYckZ8ASbS2GryqzTstLgcQdiGR~PjwNjuvwhdkf1qVyFTNoFbXVm6Mu7wOBW5iv~Xiq8~GcRx9Ut-2CHs7s5uqZGup5LqYvrSuYoC-dBSLEZNedJqqi1WZmRvQRNLYtvWQarHdnpazCqwDwGP0yiDR7M7ipkW6u-xlY5KqsI7~JRcvHfmtYbpCycCn2Gji2z8Q57R0VB68DJ14KqqRb8w0NTd0VUW4ZHgS78IoTJ2tPCGtNbuGQejRjJqxBYaA1zSIJLoMwsljoKQ__" alt="">
+                    <p><b>Saviour</b></p></div>
+           
+            <div class="mid">
+                <p>Home</p>
+                <p>IDO</p>
+                <p>Takenamics</p>
+                <p>RoadMap</p>
+                <p>Coming Soon</p>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-down-arrow-16-460295.png" alt="">   
+            </div>
+            <button>Connect Wallet</button>
+        </div>
+        <div class="where">
+            <p><b>Where Blockchain Heroes Thrive, Rescuing Dreams, Elevating Fortunes.</b></p>
+        </div>
+        </div>
+        <div class="box2">
+            <div class="fbox">
+            <div class="intro">
+                <p><b>INTRODUCTION</b></p>
+            </div>
+            <div class="para">
+                <p>We've all been in the mud once, and now we've decided to fight it out. 
+                    Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the blockchain. Save the lucky ones alive, join us to save the future! 
+                    Our mission is to empower everyone to share wealth and succeed. 
+                    <br>read more...
+                    </p>
+            </div>
+            <div class="doc">
+                <button><b>Documents</b></button>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-download-16-460295.png" alt="">
+            </div>
+        </div>
+        <div class="sbox">
+            <div class="img2">
+                <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt="">
+           </div>
+        </div>
+        </div>
+        <div class="box3">
+                 <div class="road">
+                    <p>ROAD MAP</p>
+                 </div>
+                 <div class="container">
+                    <div class="pic">
+                        <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt="">
+                    </div>
+                    <div class="pic">
+                        <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt=""></div>
+                    <div class="pic">
+                        <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt="">
+                    </div>
+                    <div class="pic">
+                        <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt="">
+                    </div>
+                 </div>
+        </div>
+        <div class="box4">
+            <div class="c1">
+                  <img src="https://s3-alpha-sig.figma.com/img/7624/956b/bb5893d955ab92e34ab86102a42d6d23?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HgV7vT5TT5nd2W8dk5fNRnM3OPBgds9BiAc7m-NIVeGxFgTTtA7WWQ5ZMckoDDCDhGteotOk-OWZwcLCIDFzVheYJmOyp5~51Fcw3UAQ4z3-xxLScEb9~Q30wiPNmNC8YFHzUXIhB4fbkO9HYJT5GOHc4xfYuks9r2oacXg0wp8EP2G5I0DGGmaQGFpOUFOFgIm1~2meb966vEb5iil6nsV6DPofAYjwd~BZfxT0Keo4vF81Awkae4rqMbR94Zf0zOMFHTC-Pwau3dMlcHGrhKQ98mUljm6YoDx0uQ6zBOcjiu3F94tQom97V8YmNSh3oB3OBwg8TAiBbjFFNNMMdg__" alt="">
+            </div>
+
+            <div class="c2">
+                <p><b>FAQ</b></p>
+                <div class="b">
+                    <ol>
+                        <li><p>Why choose "Savior"?</p>
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-download-16-460295.png" alt="">
+                        <li><p>Why is the IDO duration so long?</p>
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-download-16-460295.png" alt="">
+                        </li>
+                        <li><p>When will trading go live?</p>
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-download-16-460295.png" alt=""></li>
+                        <li><p>Where we can claim the Tokens</p>
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-download-16-460295.png" alt="">
+                            <div class="after">
+                                <p>After the IDO concludes , you can claim the tokens on our official websites</p>
+                            </div></li>
+                    </ol>
+
+                </div>
+                <div class="b"></div>
+                <div class="b"></div>
+                <div class="b"></div>
+            </div>
+        </div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>
